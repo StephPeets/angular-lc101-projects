@@ -23,7 +23,7 @@ export class CandidatesComponent implements OnInit {
   ngOnInit() {
   }
 
-  selectCadidate(candidate) {
+  selectCandidate(candidate) {
     this.selected = candidate;
   }
   // Code the addToCrew function here:
@@ -31,6 +31,8 @@ addToCrew (candidate) {
   if(this.crew.includes(candidate) === false)
   this.crew.push(candidate)
 }
+
+
   // BONUS: Code the changeMissionName function here:
 
 
