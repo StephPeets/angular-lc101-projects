@@ -2,3 +2,5 @@
 node_modules/
 lesson2/exercises/package-lock.json
 lesson2/examples/ngfor-practice/package-lock.json
+lesson2/examples/ngif-practice/package-lock.json
+
