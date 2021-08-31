@@ -12,5 +12,12 @@ export class MovieListComponent implements OnInit {
 
   ngOnInit() {
   }
-
+alertFunction(){
+  alert("MOUSEOVER")
+}
+addMovie(movie: string) {
+  if(!this.movies.includes(movie) && movie != '') {
+      this.movies.push(movie);
+  }
+}
 }

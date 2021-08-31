@@ -4,12 +4,15 @@
        <li *ngFor = "let movie of movies">{{movie}}</li>
     </ol>
  </div>
- 
+ <input #newMovie (keyup.enter)='newMovie(newMovie.value); newMovie.value = ""' type='text' placeholder="Enter Movie Title Here"/>
+ <button (click)='addMovie(newMovie.value); newMovie.value = ""'>Add</button>
+ <!-- <p>{{newMovie.value}}</p> -->
  <ng-template #needMoreMovies>
     <div class='movies'>
        <h3>Not Enough Movies!</h3>
        <p>You only have {{movies.length}} movies on your watch list!</p>
        <p>What's up with that?</p>
        <p>You need to purchase expensive popcorn more often.</p>
+
     </div>
  </ng-template>
