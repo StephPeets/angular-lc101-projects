@@ -16,11 +16,11 @@ export class ButtonsComponent implements OnInit {
 
    ngOnInit() { }
 
-   reactivate() {
-      this.goldBool = true;
-      this.silverBool = true;
-      this.copperBool = true;
-   }
+   // activate() {
+   //    this.goldBool = true;
+   //    this.silverBool = true;
+   //    this.copperBool = true;
+   // }
 
 }
 
