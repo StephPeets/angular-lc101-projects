@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GoldButtonComponent } from './gold-button.component';
+import { ButtonHeadingComponent } from './button-heading.component';
 
-describe('GoldButtonComponent', () => {
-  let component: GoldButtonComponent;
-  let fixture: ComponentFixture<GoldButtonComponent>;
+describe('ButtonHeadingComponent', () => {
+  let component: ButtonHeadingComponent;
+  let fixture: ComponentFixture<ButtonHeadingComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GoldButtonComponent ]
+      declarations: [ ButtonHeadingComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GoldButtonComponent);
+    fixture = TestBed.createComponent(ButtonHeadingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

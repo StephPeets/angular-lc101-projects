@@ -1,16 +1,16 @@
 <div class="buttons">
-  <h3>{{buttonHeading}}</h3>
 
-  <button [class.gold]="buttonBool[0]" [disabled]="!buttonBool[0]" (click)="buttonBool[0] = false">Gold</button>
+  <button [class.gold]="goldBool" [disabled]="!goldBool" (click)="goldBool=false">Gold</button>
   <hr>
 
-  <button [class.silver]="buttonBool[1]" [disabled]="!buttonBool[1]" (click)="buttonBool[1]=false">Silver</button>
+  <button [class.silver]="silverBool" [disabled]="!silverBool" (click)="silverBool=false">Silver</button>
   <hr>
 
-  <button [class.copper]="buttonBool[2]" [disabled]="!buttonBool[2]" (click)="buttonBool[2]=false">Copper</button>
+  <button [class.copper]="copperBool" [disabled]="!copperBool" (click)="copperBool=false">Copper</button>
   <hr>
+  
+  <button (click)="reactivate()">Reactivate Buttons</button>
 
-  <button (click)="reactivate()">Activate Buttons</button>
 </div>
 
-<!-- TO DO: 30.4.4 Bonus -->                                
+<!-- TO DO: 30.4.4 Bonus -->

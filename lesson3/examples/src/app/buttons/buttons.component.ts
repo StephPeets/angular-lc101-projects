@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
    selector: 'buttons',
    templateUrl: './buttons.component.html',
@@ -7,15 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonsComponent implements OnInit {
 
-   buttonHeading: string = "Buttons";
-   inactive: boolean = false;
-   buttonBool: boolean[] = [true, true, true];
+   goldBool: boolean = true;
+   silverBool: boolean = true;
+   copperBool: boolean = true;
 
    constructor() { }
 
    ngOnInit() { }
 
-   reactivate = () => {
-      this.buttonBool = [true, true, true];
+   reactivate() {
+      this.goldBool = true;
+      this.silverBool = true;
+      this.copperBool = true;
    }
+
 }
+
+
+
